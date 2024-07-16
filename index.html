@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FÎKR Û RAMAN - Platforma nivîsandinê û parvekirina ramanên Kurdî">
+    <title>FÎKR Û RAMAN - Platforma Nivîsandinê ya Kurdî</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-animated.gif" alt="FÎKR Û RAMAN Logo" id="main-logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Mal</a></li>
+                    <li class="dropdown">
+                        <a href="categories.html">Kategorî <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <!-- Category items will be dynamically inserted here -->
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="content.html">Naverok <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles.html">Gotar</a></li>
+                            <li><a href="podcasts.html">Podcast</a></li>
+                            <li><a href="videos.html">Vîdyo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="writers.html">Nivîskar</a></li>
+                    <li><a href="about.html">Der barê me de</a></li>
+                </ul>
+                <div class="user-actions">
+                    <a href="#" id="search-toggle"><i class="fas fa-search"></i></a>
+                    <a href="#" id="settings-toggle"><i class="fas fa-cog"></i></a>
+                    <button id="login-btn" class="btn">Têketin</button>
+                    <button id="register-btn" class="btn btn-primary">Tomar kirin</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="search-overlay" class="hidden">
+        <div class="container">
+            <input type="text" id="search-input" placeholder="Li vir bigerin...">
+            <button id="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>Bi xêr hatin FÎKR Û RAMAN</h1>
+                <p>Platforma we ya nû ya nivîsandinê û parvekirina ramanên xwe</p>
+                <a href="#" class="btn btn-large btn-primary">Dest pê bike</a>
+            </div>
+        </section>
+
+        <section id="featured-content" class="featured-content-section">
+            <div class="container">
+                <h2>Naveroka Bijarte</h2>
+                <div class="content-slider">
+                    <!-- Content items will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories-section">
+            <div class="container">
+                <h2>Kategorî</h2>
+                <div class="categories-grid">
+                    <!-- Category items will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="popular-writers" class="writers-section">
+            <div class="container">
+                <h2>Nivîskarên Populer</h2>
+                <div class="writers-grid">
+                    <!-- Writer cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <h2>Bultena Me Bistînin</h2>
+                <p>Ji bo nûçeyên herî dawî û naveroka taybet xwe tomar bikin</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Navnîşana e-mailê" required>
+                    <button type="submit" class="btn btn-primary">Tomar bibe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="FÎKR Û RAMAN Logo">
+                </div>
+                <div class="footer-links">
+                    <h3>Girêdanên Bilez</h3>
+                    <ul>
+                        <li><a href="index.html">Mal</a></li>
+                        <li><a href="articles.html">Gotar</a></li>
+                        <li><a href="writers.html">Nivîskar</a></li>
+                        <li><a href="about.html">Der barê me de</a></li>
+                        <li><a href="contact.html">Têkilî</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Me Bişopînin</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" class="facebook-icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="twitter-icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="youtube-icon"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FÎKR Û RAMAN. Hemû maf parastî ne.</p>
+                <ul class="legal-links">
+                    <li><a href="privacy-policy.html">Polîtîkaya Nepenîtiyê</a></li>
+                    <li><a href="terms-of-service.html">Mercên Xizmetê</a></li>
+                    <li><a href="cookie-policy.html">Polîtîkaya Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="settings-panel" class="settings-panel hidden">
+        <h3>Mîheng</h3>
+        <div class="setting">
+            <label for="dark-mode-toggle">Moda Tarî:</label>
+            <input type="checkbox" id="dark-mode-toggle">
+        </div>
+        <div class="setting">
+            <label for="font-size">Mezinahiya Nivîsê:</label>
+            <input type="range" id="font-size" min="12" max="24" value="16">
+        </div>
+        <div class="setting">
+            <label for="font-family">Cure Nivîsê:</label>
+            <select id="font-family">
+                <option value="sans-serif">Sans-serif</option>
+                <option value="serif">Serif</option>
+                <option value="monospace">Monospace</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="cookie-consent" class="hidden">
+        <p>Em ji bo ezmûna we çêtir bikin cookies bikar tînin.</p>
+        <button id="accept-cookies" class="btn btn-primary">Qebûl bike</button>
+        <a href="cookie-policy.html">Bêtir bizanin</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
